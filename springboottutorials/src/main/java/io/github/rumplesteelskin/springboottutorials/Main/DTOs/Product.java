@@ -1,4 +1,4 @@
-package io.github.rumplesteelskin.springboottutorials.Main;
+package io.github.rumplesteelskin.springboottutorials.Main.DTOs;
 
 public class Product {
     private long id;

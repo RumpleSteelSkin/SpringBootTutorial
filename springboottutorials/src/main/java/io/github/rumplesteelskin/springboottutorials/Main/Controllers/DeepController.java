@@ -1,4 +1,4 @@
-package io.github.rumplesteelskin.springboottutorials.Main;
+package io.github.rumplesteelskin.springboottutorials.Main.Controllers;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

@@ -1,5 +1,6 @@
-package io.github.rumplesteelskin.springboottutorials.Main;
+package io.github.rumplesteelskin.springboottutorials.Main.Controllers;
 
+import io.github.rumplesteelskin.springboottutorials.Main.DTOs.Product;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
