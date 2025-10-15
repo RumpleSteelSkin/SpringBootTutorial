@@ -1,4 +1,4 @@
-package io.github.rumplesteelskin.springboottutorials.Main;
+package io.github.rumplesteelskin.springboottutorials.main;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

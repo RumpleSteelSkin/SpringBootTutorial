@@ -1,4 +1,4 @@
-package io.github.rumplesteelskin.springboottutorials.SecondMain;
+package io.github.rumplesteelskin.springboottutorials.secondmain;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

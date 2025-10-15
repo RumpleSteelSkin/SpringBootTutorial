@@ -1,17 +1,16 @@
-package io.github.rumplesteelskin.springboottutorials.Main.DTOs;
+package io.github.rumplesteelskin.springboottutorials.main.entities;
 
-public class Product {
+@SuppressWarnings("unused")
+public class Player {
     private long id;
     private String name;
-    private double price;
+    private double score;
 
-    public Product(long id, String name, double price) {
+    public Player(long id, String name, double score) {
         this.id = id;
         this.name = name;
-        this.price = price;
+        this.score = score;
     }
-
-    public Product(){}
 
     public long getId() {
         return id;
@@ -29,11 +28,11 @@ public class Product {
         this.name = name;
     }
 
-    public double getPrice() {
-        return price;
+    public double getScore() {
+        return score;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public void setScore(double score) {
+        this.score = score;
     }
 }

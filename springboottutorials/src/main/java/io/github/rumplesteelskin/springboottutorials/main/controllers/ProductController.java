@@ -1,6 +1,6 @@
-package io.github.rumplesteelskin.springboottutorials.Main.Controllers;
+package io.github.rumplesteelskin.springboottutorials.main.controllers;
 
-import io.github.rumplesteelskin.springboottutorials.Main.DTOs.Product;
+import io.github.rumplesteelskin.springboottutorials.main.entities.Product;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("SameReturnValue")
 @RestController
 @RequestMapping("/product")
 public class ProductController {

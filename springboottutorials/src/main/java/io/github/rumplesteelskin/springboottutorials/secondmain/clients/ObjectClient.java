@@ -1,6 +1,6 @@
-package io.github.rumplesteelskin.springboottutorials.SecondMain.Clients;
+package io.github.rumplesteelskin.springboottutorials.secondmain.clients;
 
-import io.github.rumplesteelskin.springboottutorials.Main.DTOs.Product;
+import io.github.rumplesteelskin.springboottutorials.main.entities.Product;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
@@ -12,6 +12,7 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 
+@SuppressWarnings("DataFlowIssue")
 @RestController
 @RequestMapping("Object")
 public class ObjectClient {
@@ -20,16 +21,14 @@ public class ObjectClient {
     private int GetCount() {
         String uri = "http://localhost:8080/product/count";
         RestTemplate restTemplate = new RestTemplate();
-        int count = restTemplate.getForObject(uri, int.class);
-        return count;
+        return restTemplate.getForObject(uri, int.class);
     }
 
     @GetMapping("getProduct")
     private Product GetProduct() {
         String uri = "http://localhost:8080/product/get";
         RestTemplate restTemplate = new RestTemplate();
-        Product product = restTemplate.getForObject(uri, Product.class);
-        return product;
+        return restTemplate.getForObject(uri, Product.class);
     }
 
     @GetMapping("getProducts")

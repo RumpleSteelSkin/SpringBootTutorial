@@ -1,4 +1,4 @@
-package io.github.rumplesteelskin.springboottutorials.Main.Controllers;
+package io.github.rumplesteelskin.springboottutorials.main.controllers;
 
 import org.springframework.web.bind.annotation.*;
 
