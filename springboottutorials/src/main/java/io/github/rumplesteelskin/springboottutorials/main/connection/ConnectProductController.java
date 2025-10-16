@@ -48,5 +48,46 @@ public class ConnectProductController {
         return (List<Product>) productRepository.findAll();
     }
 
+    @GetMapping("generate")
+    public String generate() {
+        int count = 10;
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < count; i++) {
+            UUID uuid = UUID.randomUUID();
+            Product product = new Product(uuid, 4000 + i * 500, "Product " + i);
+            productRepository.save(product);
+            stringBuilder.append(product.getId()).append(" ").append(product.getName()).append(" ").append(product.getPrice()).append("\n");
+        }
+        return "Generated (" + count + "):" + stringBuilder;
+    }
+
+    @GetMapping("exist/{id}")
+    public boolean exist(@PathVariable("id") UUID id) {
+        return productRepository.existsById(id);
+    }
+
+    @GetMapping("count")
+    public int count() {
+        return (int) productRepository.count();
+    }
+
+    @GetMapping("update/{id}/{name}/{price}")
+    public String create(@PathVariable("id") String id, @PathVariable("name") String name, @PathVariable("price") double price) {
+        UUID uuid = UUID.fromString(id);
+        Optional<Product> product = productRepository.findById(uuid);
+        if (product.isPresent()) {
+            Product p = product.get();
+            p.setName(name);
+            p.setPrice(price);
+            productRepository.save(p);
+            return "Product " + p.getName() + " " + p.getPrice();
+        } else return "Product " + id + " not found";
+    }
+
+    @GetMapping("delete/{id}")
+    public String delete(@PathVariable("id") UUID id) {
+        productRepository.deleteById(id);
+        return "Product " + id + " deleted";
+    }
 
 }
