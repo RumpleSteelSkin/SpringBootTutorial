@@ -1,5 +1,7 @@
-package io.github.rumplesteelskin.springboottutorials.main.connection;
+package io.github.rumplesteelskin.springboottutorials.main.connection.controllers;
 
+import io.github.rumplesteelskin.springboottutorials.main.connection.repositories.ProductRepository;
+import io.github.rumplesteelskin.springboottutorials.main.connection.entities.Product;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,9 +15,9 @@ import java.util.UUID;
 @RequestMapping("connection")
 public class ConnectProductController {
 
-    private final IProductRepository productRepository;
+    private final ProductRepository productRepository;
 
-    public ConnectProductController(IProductRepository productRepository) {
+    public ConnectProductController(ProductRepository productRepository) {
         this.productRepository = productRepository;
     }
 

@@ -12,8 +12,8 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 @RequestMapping("header")
 public class HeaderClient {
-    String uri = "http://localhost:8080/transfer/";
-    RestTemplate restTemplate = new RestTemplate();
+    private final String uri = "http://localhost:8080/transfer/";
+    private final RestTemplate restTemplate = new RestTemplate();
     ResponseEntity<String> entity;
 
     @GetMapping("get-header")

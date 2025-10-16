@@ -1,5 +1,6 @@
-package io.github.rumplesteelskin.springboottutorials.main.connection;
+package io.github.rumplesteelskin.springboottutorials.main.connection.controllers;
 
+import io.github.rumplesteelskin.springboottutorials.main.connection.repositories.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,7 +14,7 @@ import java.util.UUID;
 @RequiredArgsConstructor
 public class ConnectOptionalController {
 
-    private final IProductRepository productRepository;
+    private final ProductRepository productRepository;
 
     @GetMapping("find-else/{id}")
     public String findElseById(@PathVariable("id") String id) {
