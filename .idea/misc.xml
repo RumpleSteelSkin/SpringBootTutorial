@@ -1,9 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="EntryPointsManager">
+    <entry_points version="2.0">
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.entities.Employee department" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.DepartmentController departmentRepository" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.EmployeeController departmentRepository" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectDerivedController derivedRepository" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.EmployeeController employeeRepository" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.entities.Department employees" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.entities.Department id" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.entities.Employee id" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.entities.MyBean id" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.entities.Supplier id" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.SourceController myBean" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.entities.Department name" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.entities.Employee name" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.entities.MyBean name" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.entities.Supplier name" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectParticularController particularRepository" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectOptionalController productRepository" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.entities.Employee salary" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.entities.MyBean salary" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectSupplierController supplierRepository" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.entities.Supplier totalDebit" />
+    </entry_points>
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="org.springframework.web.bind.annotation.RequestMapping" />
     </list>
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.AdaptiveController" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.PlayerController" method="AdvanceMultiResponsePlayer" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.PlayerController" method="AdvanceResponse1Player" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.PlayerController" method="AdvanceResponse2Player" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.PlayerController" method="AdvanceResponse3Player" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.PlayerController" method="AdvanceResponse4Player" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.PlayerController" method="BasicResponsePlayer" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.PlayerController" method="ChangeContentTypePlayer" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectDerivedController" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectOptionalController" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectParticularController" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectProductController" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectProductController" method="ConnectProductController" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectSupplierController" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.SpringBootTutorialsApplicationTests" method="contextLoads" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectProductController" method="count" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectProductController" method="create" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectSupplierController" method="customCriteriaList" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectSupplierController" method="customGetWithName" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectSupplierController" method="customLikeList" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectSupplierController" method="customList" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectSupplierController" method="customMinAverageList" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectSupplierController" method="customMinList" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.DeepController" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectProductController" method="delete" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.WritingController" method="deleteProduct" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.secondmain.clients.ObjectClient" method="deleteWriting" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.entities.Department" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.DepartmentController" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.repositories.DepartmentRepository" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.repositories.DerivedRepository" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.entities.Employee" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.EmployeeController" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.repositories.EmployeeRepository" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectProductController" method="exist" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.repositories.EmployeeRepository" method="findByDepartment" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectProductController" method="findById" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectProductController" method="findById2" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.repositories.DerivedRepository" method="findByName" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.repositories.DerivedRepository" method="findByNameEndingWith" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.repositories.DerivedRepository" method="findByNameLike" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.repositories.DerivedRepository" method="findByNameLikeAndTotalDebitGreaterThanEqual" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.repositories.DerivedRepository" method="findByNameStartingWith" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.repositories.DerivedRepository" method="findByTotalDebitBetween" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.repositories.DerivedRepository" method="findByTotalDebitEquals" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.repositories.DerivedRepository" method="findByTotalDebitGreaterThanEqual" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.DepartmentController" method="findDepartmentById" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectOptionalController" method="findElseById" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.EmployeeController" method="findEmployeeById" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectOptionalController" method="findGetById" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.repositories.ParticularRepository" method="findSuppliersMinAndPageable" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectOptionalController" method="findThrowById" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectProductController" method="generate" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectSupplierController" method="generate" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.EmployeeController" method="generate" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.DepartmentController" method="generateDepartment" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectProductController" method="getAll" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.ProductController" method="GetAllProducts" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectDerivedController" method="getByName" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectDerivedController" method="getByNameEndingWith" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectDerivedController" method="getByNameStartingWith" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.secondmain.clients.HeaderClient" method="getCookie" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.TransferController" method="getCookie" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.secondmain.clients.ObjectClient" method="GetCount" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.AdaptiveController" method="GetCube" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.EmployeeController" method="getEmployeesByDepartment" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.secondmain.clients.HeaderClient" method="getHeader" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.TransferController" method="getHeader" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.SourceController" method="getMyBean" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectDerivedController" method="getNameLikeAndGreaterThanEqual" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectParticularController" method="getPage" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.secondmain.clients.ObjectClient" method="GetProduct" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.ProductController" method="GetProduct" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.ProductController" method="GetProductCount" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.secondmain.clients.ObjectClient" method="GetProducts" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.MessageController" method="GetRandom" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.DeepController" method="GetRandomBig" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.MessageController" method="GetRandomBig" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectParticularController" method="getSort" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectParticularController" method="getSortAndPage1" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectParticularController" method="getSortAndPage2" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectParticularController" method="getSortAndPageMinDebit" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectParticularController" method="getSortDescending" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.AdaptiveController" method="GetSquare" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectParticularController" method="getSuppliers" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.AdaptiveController" method="GetTesseract" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectDerivedController" method="getTotalDebitBetween" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectDerivedController" method="getTotalDebitEquals" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectDerivedController" method="getTotalDebitGreaterThanEqual" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.secondmain.clients.HeaderClient" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.SpringBootTutorialsApplication" method="main" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.secondmain.SpringBootTutorialsApplication2" method="main" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.MessageController" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.entities.MyBean" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.configurations.SourceConfiguration" method="myBean" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.secondmain.clients.ObjectClient" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.repositories.ParticularRepository" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.PlayerController" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.WritingController" method="postProduct" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.secondmain.clients.ObjectClient" method="postWriting" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.ProductController" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.WritingController" method="putProduct" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.secondmain.clients.ObjectClient" method="putWriting" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.secondmain.clients.HeaderClient" method="setCookie" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.TransferController" method="setCookie" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.secondmain.clients.HeaderClient" method="setHeader" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.TransferController" method="setHeader" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.configurations.SourceConfiguration" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.SourceController" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.SpringBootTutorialsApplication" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.secondmain.SpringBootTutorialsApplication2" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.SpringBootTutorialsApplicationTests" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.entities.Supplier" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.TransferController" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.WritingController" />
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">

@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Objects;
+import java.util.Optional;
 import java.util.UUID;
 
 @RestController
@@ -21,6 +22,7 @@ public class EmployeeController {
     private final EmployeeRepository employeeRepository;
     private final DepartmentRepository departmentRepository;
 
+    @SuppressWarnings("SameReturnValue")
     @GetMapping("generate/{departmentId}")
     public String generate(@PathVariable("departmentId") UUID departmentId) {
         Department department = departmentRepository.findById(departmentId).orElse(null);
@@ -33,5 +35,24 @@ public class EmployeeController {
             employeeRepository.save(employee);
         }
         return "Employee generated successfully";
+    }
+
+    @GetMapping("find-by-id/{id}")
+    public String findEmployeeById(@PathVariable("id") String id) {
+        Optional<Employee> optional = employeeRepository.findById(UUID.fromString(id));
+        if (optional.isEmpty()) {
+            throw new RuntimeException("Employee with id " + id + " not found");
+        }
+        Employee employee = optional.get();
+        return employee.getDepartment().getName();
+    }
+
+    @GetMapping("list-by-department/{dep-id}")
+    public String getEmployeesByDepartment(@PathVariable("dep-id") String id) {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (Employee employee : employeeRepository.findByDepartment(UUID.fromString(id))) {
+            stringBuilder.append(employee.getName()).append("\n");
+        }
+        return stringBuilder.toString();
     }
 }
