@@ -13,6 +13,7 @@ public class PayloadController {
 
     private final ApplicationEventPublisher applicationEventPublisher;
 
+    @SuppressWarnings("SameReturnValue")
     @GetMapping("publish")
     public String publishPayload() {
         applicationEventPublisher.publishEvent("My String");

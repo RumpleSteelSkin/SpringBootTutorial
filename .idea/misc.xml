@@ -23,6 +23,21 @@
       <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.entities.MyBean salary" />
       <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.ConnectSupplierController supplierRepository" />
       <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.entities.Supplier totalDebit" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.events.condition.ConditionController applicationEventPublisher" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.events.application.OperationController applicationEventPublisher" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.events.payload.PayloadController applicationEventPublisher" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.concretes.MyBean id" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.async.MethodController methodPerformer" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.SourceController myAgent" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.concretes.MyAgent myBean" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.SourceController mySpec" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.concretes.MyAgent name" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.concretes.MyBean name" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.module.one.BeanOne oneId" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.module.one.BeanOne oneName" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.connection.concretes.MyBean salary" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.module.two.BeanTwo twoId" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.module.two.BeanTwo twoName" />
     </entry_points>
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="org.springframework.web.bind.annotation.RequestMapping" />
@@ -142,6 +157,59 @@
     <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.entities.Supplier" />
     <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.TransferController" />
     <pattern value="io.github.rumplesteelskin.springboottutorials.main.controllers.WritingController" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.aggregation.AggregationController" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.aggregation.AggregationController" method="AggregationController" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.events.annotation.AnnotationListener" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.async.MethodController" method="asyncAndSyncDo" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.async.AsyncConfiguration" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.async.MethodController" method="asyncDo" />
+    <pattern value="io.github.rumplesteelskin.module.one.BeanOne" />
+    <pattern value="io.github.rumplesteelskin.module.one.ConfigurationOne" method="beanOne" />
+    <pattern value="io.github.rumplesteelskin.module.two.BeanTwo" />
+    <pattern value="io.github.rumplesteelskin.module.two.ConfigurationTwo" method="beanTwo" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.events.condition.ConditionController" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.events.condition.ConditionController" method="conditionFalse" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.events.condition.ConditionListener" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.events.condition.ConditionController" method="conditionTrue" />
+    <pattern value="io.github.rumplesteelskin.module.one.ConfigurationOne" />
+    <pattern value="io.github.rumplesteelskin.module.two.ConfigurationTwo" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.events.context.ContextAdapter" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.async.MethodPerformer" method="doSomething" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.scope.ScopeController" method="getAll" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.SourceController" method="getMyAgent" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.controllers.SourceController" method="getMySpec" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.aggregation.AggregationController" method="getOne" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.async.MethodPerformer" method="getSomething" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.aggregation.AggregationController" method="getTwo" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.events.context.ContextAdapter" method="handleContextClosed" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.events.context.ContextAdapter" method="handleContextRefreshed" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.events.context.ContextAdapter" method="handleContextStarted" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.events.context.ContextAdapter" method="handleContextStop" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.aggregation.ImportingConfiguration" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.async.MethodController" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.async.MethodPerformer" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.concretes.MyAgent" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.configurations.SourceConfiguration" method="myAgent" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.scope.ScopeConfiguration" method="myApplicationBean" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.concretes.MyBean" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.scope.ScopeConfiguration" method="myPrototypeBean" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.scope.ScopeConfiguration" method="myRequestBean" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.scope.ScopeConfiguration" method="mySessionBean" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.scope.ScopeConfiguration" method="mySingletonBean" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.connection.configurations.SourceConfiguration" method="mySpec" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.events.condition.ConditionListener" method="onConditionFalse" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.events.condition.ConditionListener" method="onConditionTrue" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.events.annotation.AnnotationListener" method="onOperationPerformed" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.events.annotation.AnnotationListener" method="onPayloadReceived" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.events.application.OperationController" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.events.application.OperationListener" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.events.payload.PayloadController" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.events.payload.PayloadListener" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.events.application.OperationController" method="publishOperation" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.events.payload.PayloadController" method="publishPayload" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.scope.ScopeConfiguration" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.scope.ScopeController" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.scope.ScopeController" method="ScopeController" />
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
