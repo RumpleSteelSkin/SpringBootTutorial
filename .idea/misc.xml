@@ -52,6 +52,37 @@
       <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.data.entities.Customer totalDebit" />
       <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.customer.CreateCustomerDTO name" />
       <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.customer.CreateCustomerDTO totalDebit" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.services.concretes.AccountServiceImpl accountRepository" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.presentation.controllers.AccountController accountService" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.customer.ResponseCustomerWithAddressDTO address" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.services.concretes.CustomerServiceImpl addressClient" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.configuration.errors.ApiErrorResponse.ErrorBody code" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.ntierresponse.AddressDTO districtName" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.address.ResponseAddressDTO districtName" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.configuration.errors.ApiErrorResponse.ErrorDetail domain" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.configuration.errors.ApiErrorResponse error" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.configuration.errors.ApiErrorResponse.ErrorBody errors" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.data.entities.Account id" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.account.ResponseAccountIdDTO id" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.customer.ResponseCustomerDTO id" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.customer.ResponseCustomerWithAddressDTO id" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.configuration.errors.ApiErrorResponse.ErrorDetail location" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.configuration.errors.ApiErrorResponse.ErrorDetail locationType" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.configuration.errors.ApiErrorResponse.ErrorBody message" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.configuration.errors.ApiErrorResponse.ErrorDetail message" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.services.concretes.AccountServiceImpl modelMapper" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.client.AddressClient modelMapper" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.data.entities.Account name" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.account.CreateAccountDTO name" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.customer.ResponseCustomerDTO name" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.customer.ResponseCustomerWithAddressDTO name" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.main.ntierresponse.AddressDTO provinceName" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.address.ResponseAddressDTO provinceName" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.configuration.errors.ApiErrorResponse.ErrorDetail reason" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.data.entities.Account totalBalance" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.account.CreateAccountDTO totalBalance" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.customer.ResponseCustomerDTO totalDebit" />
+      <entry_point TYPE="field" FQNAME="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.customer.ResponseCustomerWithAddressDTO totalDebit" />
     </entry_points>
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="org.springframework.web.bind.annotation.RequestMapping" />
@@ -253,6 +284,33 @@
     <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.services.concretes.CustomerServiceImpl" method="create" />
     <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.customer.CreateCustomerDTO" />
     <pattern value="io.github.rumplesteelskin.springboottutorials.main.exception.ExceptionHandler" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.data.entities.Account" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.presentation.controllers.AccountController" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.data.repositories.AccountRepository" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.services.concretes.AccountServiceImpl" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.client.Urls.Address" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.client.AddressClient" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.ntierresponse.AddressController" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.ntierresponse.AddressDTO" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.configuration.errors.ApiErrorResponse" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.presentation.controllers.AccountController" method="create" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.account.CreateAccountDTO" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.configuration.errors.ApiErrorResponse.ErrorBody" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.configuration.errors.ApiErrorResponse.ErrorDetail" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.client.AddressClient" method="getAddress" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.main.ntierresponse.AddressController" method="getAddress" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.presentation.controllers.CustomerController" method="getAll" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.presentation.controllers.CustomerController" method="getById" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.presentation.controllers.CustomerController" method="getByIdWithAddress" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.configuration.errors.GlobalExceptionHandler" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.configuration.errors.GlobalExceptionHandler" method="handleException" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.configuration.errors.GlobalExceptionHandler" method="handleNotFound" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.account.ResponseAccountIdDTO" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.address.ResponseAddressDTO" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.customer.ResponseCustomerDTO" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.customer.ResponseCustomerWithAddressDTO" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.client.Urls" />
+    <pattern value="io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.services.concretes.AccountServiceImpl" method="create" />
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">

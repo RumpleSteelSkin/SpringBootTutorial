@@ -10,9 +10,9 @@ import org.springframework.web.client.RestTemplate;
 @RequiredArgsConstructor
 public class AddressClient {
     private final ModelMapper modelMapper;
-    RestTemplate restTemplate = new RestTemplate();
 
     public ResponseAddressDTO getAddress(String personId) {
+        RestTemplate restTemplate = new RestTemplate();
         return modelMapper.map(restTemplate.getForObject(Urls.Address.GET + personId, ResponseAddressDTO.class), ResponseAddressDTO.class);
     }
 }
