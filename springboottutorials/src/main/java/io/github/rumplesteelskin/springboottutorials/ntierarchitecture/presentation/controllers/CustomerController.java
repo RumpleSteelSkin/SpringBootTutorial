@@ -2,6 +2,7 @@ package io.github.rumplesteelskin.springboottutorials.ntierarchitecture.presenta
 
 import io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.customer.CreateCustomerDTO;
 import io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.customer.ResponseCustomerDTO;
+import io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.customer.ResponseCustomerWithAddressDTO;
 import io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.services.interfaces.CustomerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
@@ -27,5 +28,10 @@ public class CustomerController {
     @GetMapping("get/{id}")
     public ResponseCustomerDTO getById(@PathVariable UUID id) {
         return customerService.getById(id);
+    }
+
+    @GetMapping("getWithAddress/{id}")
+    public ResponseCustomerWithAddressDTO getByIdWithAddress(@PathVariable UUID id) {
+        return customerService.getByIdWithAddress(id);
     }
 }

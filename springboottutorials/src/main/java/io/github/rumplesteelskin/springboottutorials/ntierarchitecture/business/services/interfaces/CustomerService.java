@@ -2,6 +2,7 @@ package io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business
 
 import io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.customer.CreateCustomerDTO;
 import io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.customer.ResponseCustomerDTO;
+import io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.customer.ResponseCustomerWithAddressDTO;
 
 import java.util.UUID;
 
@@ -12,4 +13,6 @@ public interface CustomerService {
     Iterable<ResponseCustomerDTO> getAll();
 
     ResponseCustomerDTO getById(UUID id);
+
+    ResponseCustomerWithAddressDTO getByIdWithAddress(UUID id);
 }

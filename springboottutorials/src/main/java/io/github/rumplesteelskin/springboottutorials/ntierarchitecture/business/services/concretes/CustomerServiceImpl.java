@@ -2,7 +2,9 @@ package io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business
 
 import io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.customer.CreateCustomerDTO;
 import io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.customer.ResponseCustomerDTO;
+import io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.dtos.customer.ResponseCustomerWithAddressDTO;
 import io.github.rumplesteelskin.springboottutorials.ntierarchitecture.business.services.interfaces.CustomerService;
+import io.github.rumplesteelskin.springboottutorials.ntierarchitecture.client.AddressClient;
 import io.github.rumplesteelskin.springboottutorials.ntierarchitecture.configuration.errors.custom.NotFoundException;
 import io.github.rumplesteelskin.springboottutorials.ntierarchitecture.data.entities.Customer;
 import io.github.rumplesteelskin.springboottutorials.ntierarchitecture.data.repositories.CustomerRepository;
@@ -19,6 +21,7 @@ public class CustomerServiceImpl implements CustomerService {
 
     private final CustomerRepository customerRepository;
     private final ModelMapper modelMapper;
+    private final AddressClient addressClient;
 
     @Override
     public String create(CreateCustomerDTO createCustomerDTO) {
@@ -36,5 +39,13 @@ public class CustomerServiceImpl implements CustomerService {
     public ResponseCustomerDTO getById(UUID id) {
         return customerRepository.findById(id).map(customer -> modelMapper.map(customer, ResponseCustomerDTO.class))
                 .orElseThrow(() -> new NotFoundException("Customer with id " + id + " not found"));
+    }
+
+    @Override
+    public ResponseCustomerWithAddressDTO getByIdWithAddress(UUID id) {
+        Customer customer = customerRepository.findById(id).orElseThrow(() -> new NotFoundException("Customer with id " + id + " not found"));
+        ResponseCustomerWithAddressDTO response = modelMapper.map(customer, ResponseCustomerWithAddressDTO.class);
+        response.setAddress(addressClient.getAddress(id.toString()));
+        return response;
     }
 }
